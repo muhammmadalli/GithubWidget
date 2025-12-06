@@ -1,7 +1,7 @@
-![GithubWidget](https://github.com/Nightonke/GithubWidget/blob/master/Pic/title_image_3.png?raw=true)
-
 # Github Widget
 Contributions, stars, followers, trending etc. on Github.
+
+![GithubWidgetBanner](https://github.com/muhammmadalli/GithubWidget/blob/master/Pic/github%20app.png)
 
 # Guide
 ### [What is Github Widget?](https://github.com/Nightonke/GithubWidget#what-is-github-widget)

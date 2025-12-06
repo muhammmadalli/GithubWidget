@@ -39,13 +39,13 @@ plugins {
 android {
     // Using 34 is recommended as it's the current stable target for the Play Store.
     // 36 is a developer preview and may have unstable APIs.
-    compileSdkVersion 36
+    compileSdkVersion 34
     // buildToolsVersion is correctly commented out. It's not needed anymore.
 
     defaultConfig {
         applicationId "com.nightonke.githubwidget"
         minSdkVersion 27
-        targetSdkVersion 36 // Match the compileSdkVersion
+        targetSdkVersion 34 // Match the compileSdkVersion
         versionCode 1
         versionName "1.0.3"
         multiDexEnabled true

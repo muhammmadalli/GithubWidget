@@ -25,7 +25,7 @@ import android.graphics.Typeface;
 import android.media.ThumbnailUtils;
 import android.os.Build;
 import android.preference.PreferenceManager;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;

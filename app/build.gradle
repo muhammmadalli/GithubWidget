@@ -1,15 +1,10 @@
+/*
+  ALL OLD CONFIG WITH SDK TARGET 23
 apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-
-   // lintOptions {
-   //     isAbortOnError false
-     //   isCheckDependencies true
-     //   isCheckAllWarnings true
-     //   isWarningsAsErrors true
-  //  }
 
     defaultConfig {
         applicationId "com.nightonke.githubwidget"
@@ -32,4 +27,46 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
 
     compile 'com.github.johnpersano:supertoasts:1.3.4@aar'
+}
+
+*/
+
+// Use the correct 'plugins' block with curly braces {}
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    // Using 34 is recommended as it's the current stable target for the Play Store.
+    // 36 is a developer preview and may have unstable APIs.
+    compileSdkVersion 36
+    // buildToolsVersion is correctly commented out. It's not needed anymore.
+
+    defaultConfig {
+        applicationId "com.nightonke.githubwidget"
+        minSdkVersion 14
+        targetSdkVersion 36 // Match the compileSdkVersion
+        versionCode 1
+        versionName "1.0.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // This compileOptions block is correct and necessary.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Your dependencies are now correctly using 'implementation' and 'androidx'.
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.github.johnpersano:supertoasts:1.3.4@aar'
 }

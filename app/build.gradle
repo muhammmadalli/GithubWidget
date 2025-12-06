@@ -44,10 +44,11 @@ android {
 
     defaultConfig {
         applicationId "com.nightonke.githubwidget"
-        minSdkVersion 14
+        minSdkVersion 27
         targetSdkVersion 36 // Match the compileSdkVersion
         versionCode 1
         versionName "1.0.3"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -69,4 +70,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.github.johnpersano:supertoasts:1.3.4@aar'
+    implementation 'androidx.multidex:multidex:2.0.1'
 }

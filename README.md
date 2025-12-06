@@ -5,13 +5,12 @@ Contributions, stars, followers, trending etc. on Github.
 
 # Guide
 ### [中文文档](https://github.com/Nightonke/GithubWidget/blob/master/README-ZH.md)
-### [What is Github Widget?](https://github.com/Nightonke/GithubWidget#what-is-github-widget-1)
+### [What is Github Widget?](https://github.com/Nightonke/GithubWidget#what-is-github-widget)
 ### [Download](https://github.com/Nightonke/GithubWidget#download)
-### [Styles of Github Widget](https://github.com/Nightonke/GithubWidget#styles-of-github-widget-1)
-### [Settings](https://github.com/Nightonke/GithubWidget#settings-1)
-### [Problems, Bugs or Enhancement](https://github.com/Nightonke/GithubWidget#problems-bugs-or-enhancement)
-### [Version List](https://github.com/Nightonke/GithubWidget#version-list-1)
-### [License](https://github.com/Nightonke/GithubWidget#license-1)
+### [Styles of Github Widget](https://github.com/Nightonke/GithubWidget#styles-of-github-widget)
+### [Settings](https://github.com/Nightonke/GithubWidget#settings)
+### [Problems, Bugs or Enhancement](https://github.com/Nightonke/GithubWidget#problems-bugs-or-enhancements)
+### [Version List](https://github.com/Nightonke/GithubWidget#version-list)
 
 ## What is Github Widget?
 Github Widget is a ligthweight application for 11 different styles of widget to show the following information of github user.  

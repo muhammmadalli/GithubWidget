@@ -4,7 +4,6 @@
 Contributions, stars, followers, trending etc. on Github.
 
 # Guide
-### [中文文档](https://github.com/Nightonke/GithubWidget/blob/master/README-ZH.md)
 ### [What is Github Widget?](https://github.com/Nightonke/GithubWidget#what-is-github-widget)
 ### [Download](https://github.com/Nightonke/GithubWidget#download)
 ### [Styles of Github Widget](https://github.com/Nightonke/GithubWidget#styles-of-github-widget)

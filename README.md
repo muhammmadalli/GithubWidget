@@ -30,11 +30,7 @@ Github Widget is a ligthweight application for 11 different styles of widget to 
 After installing Github Widget, there is no launch icon for it. Try to add widgets to launcher and you will find Github Widget there.
 
 ## Download
-Check the [Apk](https://github.com/Nightonke/GithubWidget/tree/master/Apk) diectory for all versions apks and qrcode pictures.  
-Download the current version [here](https://github.com/Nightonke/GithubWidget/blob/master/Apk/GithubWidget_1.0.3.apk?raw=true).  
-Or from [fir.im/GithubWidget](http://fir.im/GithubWidget).  
-Or by qrcode:  
-![Qrcode](https://github.com/Nightonke/GithubWidget/blob/master/Apk/GithubWidget_1.0.3.png?raw=true)
+The repo will be refactored and upgraded to confine to present-day security and latest android build requirements. Then the app will be published to Google Play Store and and apk link will also be provided here.  
 
 ## Styles of Github Widget
 The first version supports 11 styles for showing part of the above information.  

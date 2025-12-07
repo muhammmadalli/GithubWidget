@@ -104,7 +104,7 @@ public class GithubWidget7 extends AppWidgetProvider {
             Intent serviceIntent = new Intent(context, GithubWidgetService.class);
             serviceIntent.setAction(Actions.CLICK_AVATAR);
             PendingIntent pendingServiceIntent = PendingIntent.getService(
-                    context, 0, serviceIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+                    context, 0, serviceIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
             remoteViews.setOnClickPendingIntent(R.id.avatar, pendingServiceIntent);
         }
 

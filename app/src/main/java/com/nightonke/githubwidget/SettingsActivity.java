@@ -31,7 +31,6 @@ public class SettingsActivity extends AppCompatActivity
     private LinearLayout userNameLayout;
     private EditText userNameEditText;
 
-    private RelativeLayout mottoLayout;
     private LimitedEditText mottoEditText;
 
     private ImageView imageView3D;
@@ -42,20 +41,15 @@ public class SettingsActivity extends AppCompatActivity
     private MySeekBar seekBarR;
     private MySeekBar seekBarG;
     private MySeekBar seekBarB;
-    private Button resetBaseColorButton;
-    
-    private LinearLayout showToastLayout;
+
     private CheckBox showToastCheckBox;
-    
-    private LinearLayout showMonthDashIn3DLayout;
+
     private CheckBox showMonthDashIn3DCheckBox;
-    
-    private LinearLayout showWeekdayDashIn3DLayout;
+
     private CheckBox showWeekdayDashIn3DCheckBox;
 
     private Button loginButton;
 
-    private LinearLayout startFromLayout;
     private RadioButton startFromSunday;
     private RadioButton startFromMonday;
 
@@ -64,8 +58,6 @@ public class SettingsActivity extends AppCompatActivity
 
     private SeekBar receivedEventPerPageSeekBar;
     private TextView receivedEventPerPageTextView;
-
-    private RadioGroup contentTypeRadioGroup;
 
     private Button languageButton;
 
@@ -109,7 +101,7 @@ public class SettingsActivity extends AppCompatActivity
         });
         userNameLayout.setOnClickListener(this);
 
-        mottoLayout = findView(R.id.motto_layout);
+        RelativeLayout mottoLayout = findView(R.id.motto_layout);
         mottoEditText = findView(R.id.motto_title);
         mottoEditText.setMaxLines(2);
         mottoEditText.setOnTextChangedListener(new LimitedEditText.OnTextChangedListener() {
@@ -132,30 +124,30 @@ public class SettingsActivity extends AppCompatActivity
         seekBarG.setOnSeekBarChangeListener(onSeekBarChangeListener);
         seekBarB = findView(R.id.seek_bar_b);
         seekBarB.setOnSeekBarChangeListener(onSeekBarChangeListener);
-        resetBaseColorButton = findView(R.id.reset_base_color);
+        Button resetBaseColorButton = findView(R.id.reset_base_color);
         resetBaseColorButton.setOnClickListener(this);
 
         loginButton = findView(R.id.login);
 
-        showToastLayout = findView(R.id.show_toast_layout);
+        LinearLayout showToastLayout = findView(R.id.show_toast_layout);
         showToastCheckBox = findView(R.id.show_toast_checkbox);
         showToastLayout.setOnClickListener(this);
         showToastCheckBox.setOnClickListener(this);
         showToastCheckBox.setChecked(SettingsManager.getShowToast());
-        
-        showMonthDashIn3DLayout = findView(R.id.show_month_dash_in_3d_layout);
+
+        LinearLayout showMonthDashIn3DLayout = findView(R.id.show_month_dash_in_3d_layout);
         showMonthDashIn3DCheckBox = findView(R.id.show_month_dash_in_3d_checkbox);
         showMonthDashIn3DLayout.setOnClickListener(this);
         showMonthDashIn3DCheckBox.setOnClickListener(this);
         showMonthDashIn3DCheckBox.setChecked(SettingsManager.getShowMonthDashIn3D());
 
-        showWeekdayDashIn3DLayout = findView(R.id.show_weekday_dash_in_3d_layout);
+        LinearLayout showWeekdayDashIn3DLayout = findView(R.id.show_weekday_dash_in_3d_layout);
         showWeekdayDashIn3DCheckBox = findView(R.id.show_weekday_dash_in_3d_checkbox);
         showWeekdayDashIn3DLayout.setOnClickListener(this);
         showWeekdayDashIn3DCheckBox.setOnClickListener(this);
         showWeekdayDashIn3DCheckBox.setChecked(SettingsManager.getShowWeekdayDashIn3D());
 
-        startFromLayout = findView(R.id.start_from_layout);
+        LinearLayout startFromLayout = findView(R.id.start_from_layout);
         startFromSunday = findView(R.id.start_from_sunday);
         startFromMonday = findView(R.id.start_from_monday);
         startFromLayout.setOnClickListener(this);
@@ -221,7 +213,7 @@ public class SettingsActivity extends AppCompatActivity
         receivedEventPerPageTextView = findView(R.id.received_event_per_page_text);
         setReceivedEventPerPageText();
 
-        contentTypeRadioGroup = findView(R.id.list_view_content_radio_group);
+        RadioGroup contentTypeRadioGroup = findView(R.id.list_view_content_radio_group);
         contentTypeRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {

@@ -99,7 +99,7 @@ public class GithubWidget7 extends AppWidgetProvider {
             intent = new Intent(context, SettingsActivity.class);
             intent.setAction(Actions.CLICK_AVATAR);
             remoteViews.setOnClickPendingIntent(R.id.avatar,
-                    PendingIntent.getActivity(context, 0, intent, 0));
+                    PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
         } else {
             Intent serviceIntent = new Intent(context, GithubWidgetService.class);
             serviceIntent.setAction(Actions.CLICK_AVATAR);
@@ -111,42 +111,42 @@ public class GithubWidget7 extends AppWidgetProvider {
         intent = new Intent(context, SettingsActivity.class);
         intent.setAction(Actions.CLICK_CONTRIBUTIONS);
         remoteViews.setOnClickPendingIntent(R.id.contributions,
-                PendingIntent.getActivity(context, 0, intent, 0));
+                PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
 
         intent = new Intent(context, SettingsActivity.class);
         intent.setAction(Actions.CLICK_MOTTO);
         remoteViews.setOnClickPendingIntent(R.id.motto,
-                PendingIntent.getActivity(context, 0, intent, 0));
+                PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
 
         intent = new Intent(context, SettingsActivity.class);
         intent.setAction(Actions.CLICK_FOLLOWERS);
         remoteViews.setOnClickPendingIntent(R.id.followers,
-                PendingIntent.getActivity(context, 0, intent, 0));
+                PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
 
         intent = new Intent(context, SettingsActivity.class);
         intent.setAction(Actions.CLICK_CONTRIBUTIONS_SUM);
         remoteViews.setOnClickPendingIntent(R.id.contributions_sum,
-                PendingIntent.getActivity(context, 0, intent, 0));
+                PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
 
         intent = new Intent(context, SettingsActivity.class);
         intent.setAction(Actions.CLICK_CONTRIBUTIONS_TODAY);
         remoteViews.setOnClickPendingIntent(R.id.contributions_today,
-                PendingIntent.getActivity(context, 0, intent, 0));
+                PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
 
         intent = new Intent(context, SettingsActivity.class);
         intent.setAction(Actions.CLICK_CURRENT_STREAK);
         remoteViews.setOnClickPendingIntent(R.id.current_streak,
-                PendingIntent.getActivity(context, 0, intent, 0));
+                PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
 
         intent = new Intent(context, SettingsActivity.class);
         intent.setAction(Actions.CLICK_STARS_TODAY);
         remoteViews.setOnClickPendingIntent(R.id.stars_today,
-                PendingIntent.getActivity(context, 0, intent, 0));
+                PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
 
         intent = new Intent(context, SettingsActivity.class);
         intent.setAction(Actions.CLICK_ALL);
         remoteViews.setOnClickPendingIntent(R.id.base_layout,
-                PendingIntent.getActivity(context, 0, intent, 0));
+                PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE));
 
         // update contents of list view
         new ListViewContentTask(remoteViews, context, componentName,
